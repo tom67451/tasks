@@ -5,12 +5,12 @@
 
 ## Features
 
-- **Task Management:** Add, edit, delete, and organize tasks effortlessly.
-- **Due Dates:** Set deadlines
-- **Priority Levels:** Assign Low, Medium, or High priority for better focus.
-- **Notes:** Attach extra details and comments to every task.
-- **Color Schemes:** Customize your theme to suit your style.
-- **Settings Panel:** Fine-tune notifications, UI styles, and more.
+- **✅Task Management:** Add, edit, delete, and organize tasks effortlessly.
+- **✅Due Dates:** Set deadlines
+- **✅Priority Levels:** Assign Low, Medium, or High priority for better focus.
+- **✅Notes:** Attach extra details and comments to every task.
+- **✅Color Schemes:** Customize your theme to suit your style.
+- **✅Settings Panel:** Fine-tune notifications, UI styles, and more.
 
 ## Screenshots
 
