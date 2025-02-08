@@ -356,8 +356,9 @@ nav button {
   max-width: 800px;
   text-align: left;
 }
-.header-task-list {
-  color: white;}
+.task-list .header-task-list {
+  color: white !important;
+}
 #div-task-form {
   position: absolute;
   top: 45%;
