@@ -2,8 +2,6 @@
 
 🚀 **Tasks** is your sleek, intuitive productivity companion built to help you manage tasks, set priorities.
 
----
-
 ## Live demo
 🔗 [Click Here](https://tom67451.github.io/tasks/)
 
