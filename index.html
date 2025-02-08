@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tasks</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body id="body" class="intr-body">
+    <div class="introduction-content" id="introduction-content">
+      <nav class="intr-navbar">
+        <p class="brand">Tasks</p>
+        <div class="intr-nav-links">
+          <p>Features</p>
+          <p>Get started</p>
+        </div>
+
+
+      </nav>
+      <h1 class="intr-heading">Stay Organized, Stay Creative.</h1>
+      <p class="intr-subheading">
+        Join countless users to manage tasks and achieve your goals with ease.
+      </p>
+      
+
+
+      <button class="get-started-btn" id="open-app">Get started.</button>
+      <div>
+        <a href="https://github.com/tom67451" target="_blank">
+        <img
+          class="github-logo"
+          alt="github logo"
+          src="https://www.svgrepo.com/show/445786/github.svg"
+        />
+      </div>
+    </a>
+    <div>
+      <div class="features-section">
+        <h2 class="features-text">Organize everything in your life</h2>
+          <p class='features-text'>Whether it's organizing tasks, planning projects, or managing your daily goals, our app helps you stay on track and achieve everything with ease and confidence.</p>
+          <div class='features-image'>
+            <img class='features-image' src="https://images.ctfassets.net/0gqf8nju6pz6/7ECai08svy1kIPy0XZ2HXH/61580eb6a27fa784a08c951cfd9cdbd8/Timemangement2.jpeg">
+          </div>
+      </div>
+     
+      <footer>
+        <div class="footer-content">
+    <p>&copy; 2025 Tasks. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="#about">About</a>
+      <a href="#privacy">Privacy Policy</a>
+      <a href="#contact">Contact Us</a>
+    </div>
+  </div>
+      </footer>
+    </div>
+    </div>
+
+    <div id="settings-content" class="hidden settings-container">
+      <h1 class="settings-header">Settings</h1>
+      <button id="back-to-main-btn" class="back-btn">🔙 Back</button>
+
+      <section class="settings-section">
+        <h2>Appearance</h2>
+        <div class="settings-item">
+          <label for="theme-select">Choose Theme:</label>
+          <select id="theme-select" class="theme-select">
+            <option value="light">☀️ Light Mode</option>
+            <option value="dark">🌙 Dark Mode</option>
+            <option value="black">🐈‍⬛ Blackout Mode (OLED)</option>
+          </select>
+        </div>
+       
+      </section>
+
+      <section class="settings-section">
+        <h2>Deletion</h2>
+        <div class="settings-item">
+          <label for="clear-tasks-btn">Clear all tasks:</label>
+          <button id="clear-tasks-btn" class="clear-tasks-btn">🗑️</button>
+        </div>
+        <div class="settings-item">
+          <label for="reset-settings">Delete everything:</label>
+          <button id="reset-settings" class="reset-btn">
+            Reset to Default
+          </button>
+        </div>
+      </section>
+    </div>
+    <div id="pomodoro-timer-content" class="hidden">
+      
+    </div>
+    <div id="tasks-content" class="todo-app hidden">
+      <nav class="tasks-navbar">
+        <h1>Tasks</h1>
+        
+        <button id="open-settings-btn">⚙️</button>
+      </nav>
+      <div class="buttons-container">
+        <button id="open-task-form-btn" class="open-task-form-btn">
+          <i class="fas fa-plus"></i>
+        </button>
+        
+        
+      </div>
+      <div id="notification" class="hidden"></div>
+      <div class="hidden" id="div-task-form">
+        <form id="task-form">
+          <input
+            type="text"
+            id="task-title"
+            placeholder="Enter a task title (e.g., 'Buy groceries')"
+            required
+          />
+          <input type="text" id="due-date" placeholder="Select a due date" />
+          <div class="options-container">
+            <h3>Choose a Priority:</h3>
+            <button type="button" class="option-btn" data-option="Low">
+              🟢 Low
+            </button>
+            <button type="button" class="option-btn" data-option="Medium">
+              🟠 Medium
+            </button>
+            <button type="button" class="option-btn" data-option="High">
+              🔴 High
+            </button>
+          </div>
+          <button type="button" id="add-note-btn">➕ Add Note</button>
+          <div id="note-container" class="hidden">
+            <textarea
+              id="note"
+              placeholder="Add additional details about the task (optional)"
+            ></textarea>
+          </div>
+          <div class="forum-buttons-container">
+            <button class="forum-cancel-btn" id="btn-cancel" type="button">
+              Cancel
+            </button>
+            <button class="forum-add-task-btn" id="btn-add-task" type="submit">
+              Add Task
+            </button>
+          </div>
+        </form>
+      </div>
+      <div id="task-list" class="task-list"></div>
+      <div id="completed-tasks" class="task-list">
+        <h3>Completed Tasks</h3>
+      </div>
+    </div>
+
+    <script src="script.js">   
+    </script>
+  </body>
+</html>
